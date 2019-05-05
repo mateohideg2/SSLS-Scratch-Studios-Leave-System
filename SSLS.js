@@ -1,4 +1,4 @@
-function addButton() { 
+function bookmarklet() { 
 var newDiv = document.createElement("div"); 
 var code = '<a class="button small grey" id="leave_studios"><span class="text">Leave Studios</span></a>';
 newDiv.appendChild(code);
