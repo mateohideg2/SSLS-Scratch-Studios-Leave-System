@@ -1,8 +1,7 @@
 function bookmarklet() { 
 var newDiv = document.createElement("div"); 
 newDiv.setAttribute("id", "buttonLeave");
-var code = '<a class="button small grey" id="leave_studios"><span class="text">Leave Studios</span></a>';
-document.getElementById('buttonLeave').innerHTML = code;
+document.getElementById('buttonLeave').innerHTML = '<a class="button small grey" id="leave_studios"><span class="text">Leave Studios</span></a>';
 var currentDiv = document.getElementById("main-content"); 
 document.body.insertBefore(newDiv, currentDiv); 
 }
