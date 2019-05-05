@@ -1,13 +1,11 @@
-function bookmarklet() { 
 var newDiv = document.createElement("div"); 
 newDiv.setAttribute("id", "buttonLeave");
 document.getElementById('buttonLeave').innerHTML = '<a class="button small grey" id="leave_studios"><span class="text">Leave Studios</span></a>';
-var currentDiv = document.getElementById("alert-view"); 
+var currentDiv = document.getElementById("main-content"); 
 document.body.insertBefore(newDiv, currentDiv); 
-}
 
 var elementToClick = document.getElementById("leave_studios");
-addEventListener("click", removeCurator);
+elementToClick.addEventListener("click", removeCurator);
 
 function removeCurator() {
 var studioid = prompt("Write the studio ID", "");
