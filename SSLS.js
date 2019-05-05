@@ -1,11 +1,8 @@
-if(location.host === "scratch.mit.edu") { bookmarklet(); }
-function bookmarklet() { 
 var newDiv = document.createElement("div"); 
 var currentDiv = document.getElementById("main-content"); 
 document.body.insertBefore(newDiv, currentDiv); 
 newDiv.setAttribute("id", "buttonLeave");
 document.getElementById('buttonLeave').innerHTML = '<a class="button small grey" id="leave_studios"><span class="text">Leave Studios</span></a>';
-}
 
 var elementToClick = document.getElementById("leave_studios");
 elementToClick.addEventListener("click", removeCurator);
