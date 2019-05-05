@@ -15,4 +15,4 @@ document.getElementsByClass('buttons').innerHTML = code;
 var studioid = prompt("Write the studio ID", "");
 $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/curators-in/" + studioid + "/remove/?usernames=" + Scratch.INIT_DATA.LOGGED_IN_USER.model.username});
 }
-if(location.host === "scratch.mit.edu" bookmarklet();
+if(location.host === "scratch.mit.edu") { bookmarklet();}
