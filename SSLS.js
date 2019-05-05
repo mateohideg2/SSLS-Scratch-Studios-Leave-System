@@ -1,5 +1,5 @@
 var newDiv = document.createElement("div"); 
-newDiv.setAttribute("id", "buttonLeave");
+newDiv.id = "buttonLeave"
 document.getElementById('buttonLeave').innerHTML = '<a class="button small grey" id="leave_studios"><span class="text">Leave Studios</span></a>';
 
 var elementToClick = document.getElementById("leave_studios");
